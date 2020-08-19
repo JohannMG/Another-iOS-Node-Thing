@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		2D7211B524ECC01200C79261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211B424ECC01200C79261 /* AppDelegate.swift */; };
 		2D7211B724ECC01200C79261 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211B624ECC01200C79261 /* SceneDelegate.swift */; };
-		2D7211B924ECC01200C79261 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211B824ECC01200C79261 /* ViewController.swift */; };
-		2D7211BC24ECC01200C79261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7211BA24ECC01200C79261 /* Main.storyboard */; };
+		2D7211B924ECC01200C79261 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211B824ECC01200C79261 /* RootViewController.swift */; };
 		2D7211BE24ECC01300C79261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7211BD24ECC01300C79261 /* Assets.xcassets */; };
 		2D7211C124ECC01300C79261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7211BF24ECC01300C79261 /* LaunchScreen.storyboard */; };
 		2D7211CC24ECC01300C79261 /* NodeConnectionsAgainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211CB24ECC01300C79261 /* NodeConnectionsAgainTests.swift */; };
 		2D7211D724ECC01400C79261 /* NodeConnectionsAgainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211D624ECC01400C79261 /* NodeConnectionsAgainUITests.swift */; };
+		2D7211E524ECD7C100C79261 /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211E424ECD7C100C79261 /* NodeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,7 @@
 		2D7211B124ECC01200C79261 /* NodeConnectionsAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NodeConnectionsAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7211B424ECC01200C79261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D7211B624ECC01200C79261 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D7211B824ECC01200C79261 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2D7211BB24ECC01200C79261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D7211B824ECC01200C79261 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		2D7211BD24ECC01300C79261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D7211C024ECC01300C79261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D7211C224ECC01300C79261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		2D7211D224ECC01400C79261 /* NodeConnectionsAgainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NodeConnectionsAgainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7211D624ECC01400C79261 /* NodeConnectionsAgainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeConnectionsAgainUITests.swift; sourceTree = "<group>"; };
 		2D7211D824ECC01400C79261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7211E424ECD7C100C79261 /* NodeView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 			children = (
 				2D7211B424ECC01200C79261 /* AppDelegate.swift */,
 				2D7211B624ECC01200C79261 /* SceneDelegate.swift */,
-				2D7211B824ECC01200C79261 /* ViewController.swift */,
-				2D7211BA24ECC01200C79261 /* Main.storyboard */,
+				2D7211B824ECC01200C79261 /* RootViewController.swift */,
+				2D7211E424ECD7C100C79261 /* NodeView.swift */,
 				2D7211BD24ECC01300C79261 /* Assets.xcassets */,
 				2D7211BF24ECC01300C79261 /* LaunchScreen.storyboard */,
 				2D7211C224ECC01300C79261 /* Info.plist */,
@@ -234,7 +234,6 @@
 			files = (
 				2D7211C124ECC01300C79261 /* LaunchScreen.storyboard in Resources */,
 				2D7211BE24ECC01300C79261 /* Assets.xcassets in Resources */,
-				2D7211BC24ECC01200C79261 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D7211B924ECC01200C79261 /* ViewController.swift in Sources */,
+				2D7211B924ECC01200C79261 /* RootViewController.swift in Sources */,
 				2D7211B524ECC01200C79261 /* AppDelegate.swift in Sources */,
+				2D7211E524ECD7C100C79261 /* NodeView.swift in Sources */,
 				2D7211B724ECC01200C79261 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2D7211BA24ECC01200C79261 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D7211BB24ECC01200C79261 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2D7211BF24ECC01300C79261 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,7 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JohannMG.NodeConnectionsAgain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -460,7 +452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JohannMG.NodeConnectionsAgain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
