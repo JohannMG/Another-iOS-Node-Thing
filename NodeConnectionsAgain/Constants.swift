@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 
+enum AppConstants
+{
+  static let maxInputs = 1
+  static let maxOutputs = 1
+}
+
 enum CanvasConstants
 {
   static let bgColor = UIColor(white: 0.85, alpha: 1.0)

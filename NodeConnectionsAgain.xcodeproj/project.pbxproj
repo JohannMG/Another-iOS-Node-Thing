@@ -16,6 +16,9 @@
 		2D7211D724ECC01400C79261 /* NodeConnectionsAgainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211D624ECC01400C79261 /* NodeConnectionsAgainUITests.swift */; };
 		2D7211E524ECD7C100C79261 /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211E424ECD7C100C79261 /* NodeView.swift */; };
 		2D7211E724EDF96F00C79261 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211E624EDF96F00C79261 /* Constants.swift */; };
+		2D7211EA24EE1B3100C79261 /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211E924EE1B3100C79261 /* NodeModel.swift */; };
+		2D7211EC24EE1EBD00C79261 /* NodeConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211EB24EE1EBD00C79261 /* NodeConnections.swift */; };
+		2D7211EE24EE1FC300C79261 /* NodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211ED24EE1FC300C79261 /* NodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		2D7211D824ECC01400C79261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D7211E424ECD7C100C79261 /* NodeView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		2D7211E624EDF96F00C79261 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2D7211E924EE1B3100C79261 /* NodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
+		2D7211EB24EE1EBD00C79261 /* NodeConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeConnections.swift; sourceTree = "<group>"; };
+		2D7211ED24EE1FC300C79261 /* NodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,11 @@
 		2D7211B324ECC01200C79261 /* NodeConnectionsAgain */ = {
 			isa = PBXGroup;
 			children = (
-				2D7211B424ECC01200C79261 /* AppDelegate.swift */,
-				2D7211B624ECC01200C79261 /* SceneDelegate.swift */,
+				2D7211F024EF0D1200C79261 /* App Core */,
 				2D7211B824ECC01200C79261 /* RootViewController.swift */,
+				2D7211E824EE1B1500C79261 /* Graph Infra */,
+				2D7211EF24EE200200C79261 /* Node Subviews */,
 				2D7211E624EDF96F00C79261 /* Constants.swift */,
-				2D7211E424ECD7C100C79261 /* NodeView.swift */,
 				2D7211BD24ECC01300C79261 /* Assets.xcassets */,
 				2D7211BF24ECC01300C79261 /* LaunchScreen.storyboard */,
 				2D7211C224ECC01300C79261 /* Info.plist */,
@@ -129,6 +135,33 @@
 				2D7211D824ECC01400C79261 /* Info.plist */,
 			);
 			path = NodeConnectionsAgainUITests;
+			sourceTree = "<group>";
+		};
+		2D7211E824EE1B1500C79261 /* Graph Infra */ = {
+			isa = PBXGroup;
+			children = (
+				2D7211E924EE1B3100C79261 /* NodeModel.swift */,
+				2D7211EB24EE1EBD00C79261 /* NodeConnections.swift */,
+			);
+			path = "Graph Infra";
+			sourceTree = "<group>";
+		};
+		2D7211EF24EE200200C79261 /* Node Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				2D7211E424ECD7C100C79261 /* NodeView.swift */,
+				2D7211ED24EE1FC300C79261 /* NodeViewController.swift */,
+			);
+			path = "Node Subviews";
+			sourceTree = "<group>";
+		};
+		2D7211F024EF0D1200C79261 /* App Core */ = {
+			isa = PBXGroup;
+			children = (
+				2D7211B424ECC01200C79261 /* AppDelegate.swift */,
+				2D7211B624ECC01200C79261 /* SceneDelegate.swift */,
+			);
+			name = "App Core";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7211EE24EE1FC300C79261 /* NodeViewController.swift in Sources */,
 				2D7211E724EDF96F00C79261 /* Constants.swift in Sources */,
 				2D7211B924ECC01200C79261 /* RootViewController.swift in Sources */,
 				2D7211B524ECC01200C79261 /* AppDelegate.swift in Sources */,
+				2D7211EA24EE1B3100C79261 /* NodeModel.swift in Sources */,
 				2D7211E524ECD7C100C79261 /* NodeView.swift in Sources */,
+				2D7211EC24EE1EBD00C79261 /* NodeConnections.swift in Sources */,
 				2D7211B724ECC01200C79261 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
