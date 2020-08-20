@@ -19,6 +19,8 @@
 		2D7211EA24EE1B3100C79261 /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211E924EE1B3100C79261 /* NodeModel.swift */; };
 		2D7211EC24EE1EBD00C79261 /* NodeConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211EB24EE1EBD00C79261 /* NodeConnections.swift */; };
 		2D7211EE24EE1FC300C79261 /* NodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211ED24EE1FC300C79261 /* NodeViewController.swift */; };
+		2D7211F224EF0EE000C79261 /* NodeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211F124EF0EE000C79261 /* NodeViewDelegate.swift */; };
+		2D7211F424EF0EFD00C79261 /* NodeDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7211F324EF0EFD00C79261 /* NodeDataDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		2D7211E924EE1B3100C79261 /* NodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
 		2D7211EB24EE1EBD00C79261 /* NodeConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeConnections.swift; sourceTree = "<group>"; };
 		2D7211ED24EE1FC300C79261 /* NodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeViewController.swift; sourceTree = "<group>"; };
+		2D7211F124EF0EE000C79261 /* NodeViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeViewDelegate.swift; sourceTree = "<group>"; };
+		2D7211F324EF0EFD00C79261 /* NodeDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeDataDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 			children = (
 				2D7211E424ECD7C100C79261 /* NodeView.swift */,
 				2D7211ED24EE1FC300C79261 /* NodeViewController.swift */,
+				2D7211F324EF0EFD00C79261 /* NodeDataDelegate.swift */,
+				2D7211F124EF0EE000C79261 /* NodeViewDelegate.swift */,
 			);
 			path = "Node Subviews";
 			sourceTree = "<group>";
@@ -300,7 +306,9 @@
 				2D7211B524ECC01200C79261 /* AppDelegate.swift in Sources */,
 				2D7211EA24EE1B3100C79261 /* NodeModel.swift in Sources */,
 				2D7211E524ECD7C100C79261 /* NodeView.swift in Sources */,
+				2D7211F424EF0EFD00C79261 /* NodeDataDelegate.swift in Sources */,
 				2D7211EC24EE1EBD00C79261 /* NodeConnections.swift in Sources */,
+				2D7211F224EF0EE000C79261 /* NodeViewDelegate.swift in Sources */,
 				2D7211B724ECC01200C79261 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

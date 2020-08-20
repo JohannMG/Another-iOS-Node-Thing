@@ -10,8 +10,9 @@ import UIKit
 
 class NodeView: UIView {
   
-  var isDragging = false
-  var touchOriginalLocation = CGPoint.zero
+  private var isDragging = false
+  private var touchOriginalLocation = CGPoint.zero
+  weak var delegate: NodeViewDelegate?
 
   override init(frame: CGRect)
   {

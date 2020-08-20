@@ -14,4 +14,16 @@ struct NodeModel
   var id: Int
   var connections = NodeConnections() // inits with no connections
   var origin: CGPoint
+  var maxInputs: Int
+  var maxOutputs: Int
+  
+  func hasAvilableInput() -> Bool
+  {
+    return connections.inputs.count >= maxInputs
+  }
+  
+  func hasAvailableOutputs() -> Bool
+  {
+    return connections.outputs.count >= maxOutputs
+  }
 }
